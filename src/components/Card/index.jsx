@@ -1,10 +1,10 @@
 import { useState } from "react";
-import PropTypes from "prop-types"
+import propTypes from "prop-types"
 import styles from "./Card.module.css"
 
-Card.PropTypes = {
-    titleCard: PropTypes.string,
-    textCard: PropTypes.string,
+Card.propTypes = {
+    titleCard: propTypes.string,
+    textCard: propTypes.string,
 }
 
 

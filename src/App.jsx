@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import Slider from './components/Slider'
 import Card from './components/Card'
+import Form from './components/Form'
 import logoSamzak from "./assets/logo-samzak.png"
 import imagem1 from "./assets/carrosel-camera.jpg"
 import imagem2 from "./assets/carrosel-seguranca.webp"
@@ -40,6 +41,10 @@ function App() {
           <Card imgCard={imgCardAlarme} titleCard="Alarme Monitorado" textCard="Disponibilizamos um sistema de alarme monitorado, podendo utiliza-lo conectado ao celular mediante a qualuer disparo."/>
           <Card imgCard={imgCardMonitoramento} titleCard="Monitoramento" textCard="Acesse de qualquer lugar atraves do seu celular, visualize e monite toda sua residencia."/>
           <Card imgCard={imgCardCerca} titleCard="Cerca Eletrica" textCard="Um sistema de segurança atraves de cerca eletrica que pode ser acionado tambem pela central mediante o acionamento. "/>        
+        </div>
+
+        <div className="Form">
+          <Form/>
         </div>
     </>
   )

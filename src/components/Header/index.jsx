@@ -1,10 +1,10 @@
-import PropTypes from "prop-types"
+import propTypes from "prop-types"
 import styles from "./Header.module.css"
 
-Header.PropTypes = {
-    title1: PropTypes.string,
-    title2: PropTypes.string,
-    title3: PropTypes.string,
+Header.propTypes = {
+    title1: propTypes.string,
+    title2: propTypes.string,
+    title3: propTypes.string,
 }
 
 export default function Header({cover,title1,title2,title3}){
@@ -13,10 +13,10 @@ export default function Header({cover,title1,title2,title3}){
         <img src={cover} alt="Logo" className={styles.logoImg}/>
         <h2>SAMZAK</h2>
         </div>
-        <div className="List">
+        <div className={styles.List}>
             <ul className={styles.buttons}>
                 <button>{title1}</button>
-                <button onclick="document.getElementById('title-services').scrollIntoView({ behavior: 'smooth' });">{title2}</button>
+                <button>{title2}</button>
                 <button>{title3}</button>
             </ul>
         </div>

@@ -16,6 +16,7 @@
 .arrowButton {
     cursor: pointer;
     text-decoration: none;
+    background-color: transparent;
     transition: transform .3s;
     padding: 0;
     margin: 10px;

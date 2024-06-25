@@ -23,9 +23,8 @@
 }
 
 .List{
-  justify-content: center;
-  align-self: center;
-  margin: auto;
+  justify-content: flex-end;
+  align-self:center;
 }
 
 ul{
