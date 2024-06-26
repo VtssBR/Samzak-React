@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import React, { useRef } from 'react';
 import './App.css'
 import Header from './components/Header'
 import Slider from './components/Slider'
@@ -24,26 +25,45 @@ function App() {
     imagem3
   ]
 
+  const sectionRef1 = useRef(null);
+  const sectionRef2 = useRef(null);
+  const sectionRef3 = useRef(null);
+
+
+  const scrollToSection = (sectionRef) => {
+    window.scrollTo({
+      top: sectionRef.current.offsetTop,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <>
+        <p ref={sectionRef1}></p>
         <Header
           cover={logoSamzak}
           title1="Inicio"
           title2="Serviços"
           title3="Entre em contato"
+          onLogoClick={()=> scrollToSection(sectionRef1)}
+          onButtonClick1={()=> scrollToSection(sectionRef1)}
+          onButtonClick2={()=> scrollToSection(sectionRef2)}
+          onButtonClick3={()=> scrollToSection(sectionRef3)}
         />
         <Slider  images={images}/>
-        
+
+        <p ref={sectionRef2}></p>
+
         <h2 id="title-services" className='Title'>SERVIÇOS</h2>
         
         <div className="Cards">
           <Card imgCard={imgCardCamera} titleCard="Cameras de Seguranca" textCard="Oferecemos uma instalação completa de um sistema de vigilança atraves de cameras que podem ser visualizadas atraves do celular ou ate mesmo no local."/>
-          <Card imgCard={imgCardAlarme} titleCard="Alarme Monitorado" textCard="Disponibilizamos um sistema de alarme monitorado, podendo utiliza-lo conectado ao celular mediante a qualuer disparo."/>
+          <Card imgCard={imgCardAlarme} titleCard="Alarme Residencial" textCard="Disponibilizamos um sistema de alarme monitorado, podendo utiliza-lo conectado ao celular mediante a qualuer disparo."/>
           <Card imgCard={imgCardMonitoramento} titleCard="Monitoramento" textCard="Acesse de qualquer lugar atraves do seu celular, visualize e monite toda sua residencia."/>
           <Card imgCard={imgCardCerca} titleCard="Cerca Eletrica" textCard="Um sistema de segurança atraves de cerca eletrica que pode ser acionado tambem pela central mediante o acionamento. "/>        
         </div>
 
-        <div className="Form">
+        <div  ref={sectionRef3} className="Form">
           <Form/>
         </div>
     </>

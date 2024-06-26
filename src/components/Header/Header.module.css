@@ -6,6 +6,8 @@
   padding: 1rem; 
   gap: 1rem;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 .logo{
   display: flex;

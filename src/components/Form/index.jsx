@@ -9,7 +9,7 @@ export default function Form(){
 
     const initialCheckBoxes = [
         {name: 'checkboxCamera', checked: false, message:'Camera de segurança'},
-        {name: 'checkboxAlarmename', checked: false, message: 'Alarme monitorado'},
+        {name: 'checkboxAlarmename', checked: false, message: 'Alarme residencial'},
         {name: 'checkboxCerca', checked: false, message:'Cerca eletrica'}
     ];
         
@@ -38,9 +38,9 @@ export default function Form(){
         const selectedMessages = inputCheckboxes
             .filter(checkbox => checkbox.checked)
             .map(checkbox => checkbox.message);
-            const selectedMessagesJointed = selectedMessages.join(', ')
-    
-        window.open(`https://wa.me/5511996495733?text=Oi+meu+nome+é+${inputNameText}+e+gostaria+de+fazer+um+orçamento+de:+${selectedMessagesJointed}.`,"_blank")
+            const selectedMessagesFormatted = selectedMessages.map(msg => `- ${msg}`).join('%0A');
+
+            window.open(`https://wa.me/5511996495733?text=Olá,%0AGostaria+de+solicitar+um+orçamento+para+os+seguintes+serviços:%0A${selectedMessagesFormatted}%0A%0AFico+no+aguardo+do+retorno+com+as+informações+necessárias.%0A%0AAtenciosamente,%0A${inputNameText}`, "_blank");
     };
 
 
@@ -53,8 +53,10 @@ export default function Form(){
         <div>
         <form className={styles.FormContent}>
             <h2>Solicite seu Orçamento</h2>
+            <h4>Informe seu nome: </h4>
             <label htmlFor="name">Nome: </label>
             <input onChange={handleNameInput} type="text" id="name" />
+            <h4>Selecione os serviços no qual deseja orçar:</h4>
                 <div>
                     {inputCheckboxes.map((checkbox, index) => (
                     <div key={index}>
