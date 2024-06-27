@@ -1,18 +1,56 @@
 .buttonSubmit{
-    background-color: black;
-    width: 100px;
-    padding: 5px;
+    background-color: rgb(48, 48, 48);
+    width: 200px;
+    padding: 10px;
+    align-self: center;
+    border-radius: 2px;
+    font-weight: 600;
 }
 
 .FormContent{
     display: flex;
     flex-direction: column;
     margin: auto;
-    align-items: center;
     max-width: 500px;
-    height: 500px;
+    height: 450px;
     border-radius: 5px;
     background-color: rgb(228, 228, 228);
-    padding: 10px;
-    gap: 10px;
+    padding: 50px;
+    gap: 15px;
+}
+.titleBudget{
+    align-self: center;
+    font-size: 35px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+.inputName{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.checkboxes{
+    font-size: 20px;
+}
+.inputCheckbox{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.txtTitles{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.errorMessage{
+    color: red;
+    font-size: 15px;
 }
