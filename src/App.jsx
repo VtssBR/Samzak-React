@@ -2,6 +2,7 @@ import { useState } from 'react'
 import React, { useRef } from 'react';
 import './App.css'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Slider from './components/Slider'
 import Card from './components/Card'
 import Form from './components/Form'
@@ -68,6 +69,8 @@ function App() {
         <div  ref={sectionRef3} className="Form">
           <Form/>
         </div>
+
+        <Footer/>
     </>
   )
 }
