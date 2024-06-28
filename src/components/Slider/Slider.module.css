@@ -50,10 +50,10 @@
 .overlayText {
   position: absolute;
   top: 50%;
-  left: 200px;
+  left: 150px;
   transform: translateY(-50%);
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+  
   padding: 10px;
   border-radius: 5px;
   text-align: center;
