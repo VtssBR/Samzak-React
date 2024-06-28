@@ -21,10 +21,16 @@ import imgCardMonitoramento from "./assets/monitoramento-card.png"
 function App() {
 
   const images = [
-    imagem1 ,
+    imagem1,
     imagem2,
     imagem3
   ]
+
+  const captions = [
+    { title: "Invista na sua Segurança", subtitle: "Proteja seu patrimônio com soluções confiáveis" },
+    { title: "Tecnologia a Serviço da Sua Segurança", subtitle: "Inovações que garantem tranquilidade e proteção" },
+    { title: "Conforto e Segurança para Sua Família", subtitle: "Sistemas de segurança que cuidam de quem você ama" }
+  ];
 
   const sectionRef1 = useRef(null);
   const sectionRef2 = useRef(null);
@@ -51,7 +57,7 @@ function App() {
           onButtonClick2={()=> scrollToSection(sectionRef2)}
           onButtonClick3={()=> scrollToSection(sectionRef3)}
         />
-        <Slider  images={images}/>
+        <Slider images={images} captions={captions} />
 
         <p ref={sectionRef2}></p>
 
