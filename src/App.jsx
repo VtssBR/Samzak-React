@@ -9,7 +9,7 @@ import Form from './components/Form'
 import logoSamzak from "./assets/logo-samzak.png"
 import imagem1 from "./assets/carrosel-camera.jpg"
 import imagem2 from "./assets/carrosel-seguranca.webp"
-import imagem3 from "./assets/carrosel-camera2.jpg"
+import imagem3 from "./assets/carrosel-alarme.jpg"
 import imgCardCamera from "./assets/camera-card.jpg"
 import imgCardAlarme from "./assets/alarme-card.jpeg"
 import imgCardCerca from "./assets/cerca-card.jpg"

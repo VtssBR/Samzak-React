@@ -5,7 +5,7 @@
   margin: 2rem;
   margin-top: 3rem;
   position: relative;
-  overflow: hidden; /* Adiciona esta linha para esconder as imagens fora da área visível */
+  overflow: hidden; 
 }
 
 .images{
@@ -48,18 +48,18 @@
 }
 
 .imageContainer {
-  display: flex; /* Altere para flex para permitir a rolagem lateral */
+  display: flex; 
   width: 100%;
-  height: 700px; /* Certifique-se de que a altura corresponda à altura da imagem */
-  transition: transform 0.5s ease-in-out; /* Adicione a transição para a rolagem */
+  height: 700px; 
+  transition: transform 0.5s ease-in-out; 
 }
 .overlayText {
   position: absolute;
   top: 50%;
   left: 150px;
   transform: translateY(-50%);
-  color: white;
-  
+  color: black;
+
   padding: 10px;
   border-radius: 5px;
   text-align: center;
@@ -89,6 +89,6 @@
   transform: scale(0.95);
 }
 .imageSlide {
-  min-width: 100%; /* Garanta que cada slide ocupe 100% da largura do contêiner */
+  min-width: 100%; 
   position: relative;
 }
