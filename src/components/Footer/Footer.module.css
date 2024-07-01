@@ -1,11 +1,34 @@
-.Footer{
+.Footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center; /* Adiciona esta linha para alinhar verticalmente os itens */
     background-color: rgb(29, 29, 29);
     color: white;
-    padding: 1rem; 
+    padding: 1rem;
     width: 100%;
     height: 50px;
     gap: 1rem;
     margin-top: 100px;
+  }
+  
+  .iconsImg {
+    width: 2rem;
+  }
+  
+  .iconsFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem; /* Espaço entre os grupos de ícones */
+  }  
+  .iconItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espaço entre a imagem e o texto */
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+.iconItem:hover{
+    transform: scale(1.1);
 }
