@@ -11,7 +11,7 @@ export default function Footer() {
 
   function handleCel() {
     navigator.clipboard.writeText("(11)99649-5733").then(() => {
-      setMessage("Copiado");
+      setMessage("Copiado!");
       setTimeout(() => {
         setMessage("(11)99649-5733");
       }, 3000); 

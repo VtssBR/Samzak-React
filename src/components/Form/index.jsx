@@ -91,7 +91,10 @@ export default function Form(){
                     </div>
                     ))}
                 </div>
-            <button onClick={sentMessageSubmit} className={styles.buttonSubmit} type="submit">ENVIAR</button>
+            <div onClick={sentMessageSubmit} className={styles.buttonSubmit} type="submit">
+                <p>ENVIAR</p>
+                <img className={styles.imgButtonSubmit}src="src/assets/whatsapp-button.png" alt="whatsapp" />
+            </div>
         </form>
         </div>
         </>

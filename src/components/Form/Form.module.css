@@ -1,11 +1,18 @@
 .buttonSubmit{
     background-color: rgb(48, 48, 48);
-    width: 200px;
+    color: white;
+    width: 130px;
     padding: 10px;
     align-self: center;
     border-radius: 2px;
     font-weight: 600;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .FormContent{
@@ -55,4 +62,12 @@ h4{
 .errorMessage{
     color: red;
     font-size: 15px;
+}
+
+.imgButtonSubmit{
+    width: 2rem;
+}
+
+.buttonSubmit:hover{
+    transform: scale(1.1);
 }
